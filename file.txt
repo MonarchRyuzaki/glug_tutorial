@@ -1,0 +1,668 @@
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -a
+.  ..  cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -l
+total 8
+-rw-rw-r-- 1 ryuzaki ryuzaki   71 Jan 13 19:17 cplusplus.cpp
+-rw-rw-r-- 1 ryuzaki ryuzaki    0 Jan 13 19:21 ganguly.txt
+drwxrwxr-x 2 ryuzaki ryuzaki 4096 Jan 13 18:59 glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug  sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat sss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	cout<<2;
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mv sss.cpp ./glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ rm sss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd..
+cd..: command not found
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mv ss.cpp ./glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ rm -r glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mkdir glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ la
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ rmdir glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat ss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	cout<<2;
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep "main" ss.cpp 
+int main(){
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -i "main" ss.cpp 
+int main(){
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ nano ss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -i "cout" ss.cpp 
+	cout<<2;
+	cout<<3;
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -iv "cout" ss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -c "cout" ss.cpp 
+2
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -a
+.  ..  cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -l
+total 8
+-rw-rw-r-- 1 ryuzaki ryuzaki   71 Jan 13 19:17 cplusplus.cpp
+-rw-rw-r-- 1 ryuzaki ryuzaki    0 Jan 13 19:21 ganguly.txt
+drwxrwxr-x 2 ryuzaki ryuzaki 4096 Jan 13 18:59 glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug  sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat sss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	cout<<2;
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mv sss.cpp ./glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ rm sss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd..
+cd..: command not found
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mv ss.cpp ./glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ rm -r glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mkdir glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ la
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ rmdir glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat ss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	cout<<2;
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep "main" ss.cpp 
+int main(){
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -i "main" ss.cpp 
+int main(){
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ nano ss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -i "cout" ss.cpp 
+	cout<<2;
+	cout<<3;
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -iv "cout" ss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -c "cout" ss.cpp 
+2
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ touch file.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ nano file.txt 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat file.txt 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -a
+.  ..  cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -l
+total 8
+-rw-rw-r-- 1 ryuzaki ryuzaki   71 Jan 13 19:17 cplusplus.cpp
+-rw-rw-r-- 1 ryuzaki ryuzaki    0 Jan 13 19:21 ganguly.txt
+drwxrwxr-x 2 ryuzaki ryuzaki 4096 Jan 13 18:59 glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug  sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat sss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	cout<<2;
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mv sss.cpp ./glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ rm sss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd..
+cd..: command not found
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mv ss.cpp ./glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ rm -r glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mkdir glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ la
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ rmdir glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat ss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	cout<<2;
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep "main" ss.cpp 
+int main(){
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -i "main" ss.cpp 
+int main(){
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ nano ss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -i "cout" ss.cpp 
+	cout<<2;
+	cout<<3;
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -iv "cout" ss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -c "cout" ss.cpp 
+2
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mkdir oss
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ touch filename.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ nano filename.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp file.txt filename.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat file.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -a
+.  ..  cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -l
+total 8
+-rw-rw-r-- 1 ryuzaki ryuzaki   71 Jan 13 19:17 cplusplus.cpp
+-rw-rw-r-- 1 ryuzaki ryuzaki    0 Jan 13 19:21 ganguly.txt
+drwxrwxr-x 2 ryuzaki ryuzaki 4096 Jan 13 18:59 glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug  sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat sss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	cout<<2;
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mv sss.cpp ./glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+sss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ rm sss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd..
+cd..: command not found
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mv ss.cpp ./glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ ls
+ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/glug$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ rm -r glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mkdir glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ la
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  glug
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ rmdir glug/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp cplusplus.cpp ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  ganguly.txt  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat ss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+	cout<<2;
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep "main" ss.cpp 
+int main(){
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -i "main" ss.cpp 
+int main(){
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ nano ss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -i "cout" ss.cpp 
+	cout<<2;
+	cout<<3;
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -iv "cout" ss.cpp 
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ grep -c "cout" ss.cpp 
+2
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp file1.txt filename.txt
+cp: cannot stat 'file1.txt': No such file or directory
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ touch file1.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp file1.txt filename.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat file1.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ nano filename.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat filename.txt
+Shivam Ganguly
+22B80024
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  file1.txt  filename.txt  file.txt  ganguly.txt  oss  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp file1.txt filename.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat file1.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cp file1.txt filename.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cat file1.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd ~
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~$ cd Dekstop
+bash: cd: Dekstop: No such file or directory
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~$ cd D
+Desktop/   Documents/ Downloads/ 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~$ cd Desktop/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop$ ls
+new_folder
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop$ cd new_folder/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  file1.txt  filename.txt  file.txt  ganguly.txt  oss  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ mv filename.txt ./oss/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  file1.txt  file.txt  ganguly.txt  oss  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ cd oss
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/oss$ ls
+filename.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/oss$ cat filename.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/oss$ ls
+filename.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder/oss$ cd ..
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  file1.txt  file.txt  ganguly.txt  oss  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ df ss.cpp 
+Filesystem     1K-blocks    Used Available Use% Mounted on
+/dev/nvme0n1p5  89424784 6674116  78162176   8% /
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ du ss.cpp 
+4	ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ rev ss.cpp 
+>h.++cdts/stib<edulcni#
+;dts ecapseman gnisu
+
+{)(niam tni
+;2<<tuoc	
+;3<<tuoc	
+}
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ tac ss.cpp 
+
+}
+	cout<<3;
+	cout<<2;
+int main(){
+
+using namespace std;
+#include<bits/stdc++.h>
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ du -d ss.cpp 
+du: invalid maximum depth ‘ss.cpp’
+Try 'du --help' for more information.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ du -b ss.cpp 
+81	ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ history
+    1  exit
+    2  ls
+    3  cd Downloads/
+    4  ls
+    5  cd ..
+    6  ls
+    7  python --version
+    8  python3 --version
+    9  python3
+   10  exit
+   11  echo $SHELL
+   12  whoami
+   13  pwd
+   14  ls
+   15  cd Desktop/
+   16  mkdir new_folder
+   17  cd new_folder/
+   18  cd -
+   19  cd new_folder/
+   20  cd ..
+   21  cd new_folder/
+   22  cd ~
+   23  cd Desktop/
+   24  cd new_folder/
+   25  mkdir glug
+   26  ls
+   27  cd glug/
+   28  cd ..
+   29  cd glug/
+   30  cd -
+   31  cd glug/
+   32  cd ../..
+   33  cd new_folder/
+   34  cd gl
+   35  cd glug/
+   36  cd ../../..
+   37  Desktop/
+   38  cd Desktop/
+   39  cd new_folder/
+   40  touch ganguly.txt
+   41  ls
+   42  touch cplusplus.cpp
+   43  ls
+   44  ls -
+   45  ls -l
+   46  ls -a
+   47  ls -1
+   48  echo "sayan"
+   49  echo 5
+   50  echo $SHELL
+   51  ls
+   52  nano cplusplus.cpp 
+   53  cat cplusplus.cpp 
+   54  g++ cplusplus.cpp 
+   55  gcc --version
+   56  nano cplusplus.cpp 
+   57  java --version
+   58  ls -l
+   59  touch -m ganguly.txt 
+   60  ls -l
+   61  ls
+   62  ls -la
+   63  cd glug/
+   64  ls
+   65  clear
+   66  ls 
+   67  cd ..
+   68  ls -a
+   69  ls -l
+   70  cp cplusplus.cpp sss.cpp
+   71  ls
+   72  cat sss.cpp 
+   73  mv sss.cpp ./glug/
+   74  ls
+   75  cd glug/
+   76  ls
+   77  cd ..
+   78  ls
+   79  cd glug/
+   80  ls
+   81  rm sss.cpp 
+   82  ls
+   83  cd..
+   84  cd ..
+   85  ls
+   86  cp cplusplus.cpp ss.cpp
+   87  ls
+   88  mv ss.cpp ./glug/
+   89  ls
+   90  cd glug/
+   91  ls
+   92  cd ..
+   93  ls
+   94  rm -r glug/
+   95  ls
+   96  mkdir glug
+   97  la
+   98  ls
+   99  rmdir glug/
+  100  ls
+  101  cp cplusplus.cpp ss.cpp
+  102  ls
+  103  cat ss.cpp 
+  104  grep "main" ss.cpp 
+  105  grep -i "main" ss.cpp 
+  106  nano ss.cpp 
+  107  grep -i "cout" ss.cpp 
+  108  grep -iv "cout" ss.cpp 
+  109  grep -c "cout" ss.cpp 
+  110  touch file.txt
+  111  nano file.txt 
+  112  cat file.txt 
+  113  mkdir oss
+  114  touch filename.txt
+  115  nano filename.txt
+  116  cp file.txt filename.txt
+  117  cat file.txt
+  118  cp file1.txt filename.txt
+  119  touch file1.txt
+  120  cp file1.txt filename.txt
+  121  cat file1.txt
+  122  nano filename.txt
+  123  cat filename.txt
+  124  ls
+  125  cp file1.txt filename.txt
+  126  cat file1.txt
+  127  cp file1.txt filename.txt
+  128  cat file1.txt
+  129  cd ~
+  130  ls
+  131  cd Dekstop
+  132  cd Desktop/
+  133  ls
+  134  cd new_folder/
+  135  ls
+  136  mv filename.txt ./oss/
+  137  ls
+  138  cd oss
+  139  ls
+  140  cat filename.txt
+  141  ls
+  142  cd ..
+  143  ls
+  144  df ss.cpp 
+  145  du ss.cpp 
+  146  rev ss.cpp 
+  147  tac ss.cpp 
+  148  du -d ss.cpp 
+  149  du -b ss.cpp 
+  150  history
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ history 10
+  142  cd ..
+  143  ls
+  144  df ss.cpp 
+  145  du ss.cpp 
+  146  rev ss.cpp 
+  147  tac ss.cpp 
+  148  du -d ss.cpp 
+  149  du -b ss.cpp 
+  150  history
+  151  history 10
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ !148
+du -d ss.cpp 
+du: invalid maximum depth ‘ss.cpp’
+Try 'du --help' for more information.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ history 10
+  144  df ss.cpp 
+  145  du ss.cpp 
+  146  rev ss.cpp 
+  147  tac ss.cpp 
+  148  du -d ss.cpp 
+  149  du -b ss.cpp 
+  150  history
+  151  history 10
+  152  du -d ss.cpp 
+  153  history 10
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ !148
+du -d ss.cpp 
+du: invalid maximum depth ‘ss.cpp’
+Try 'du --help' for more information.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ history 10
+  146  rev ss.cpp 
+  147  tac ss.cpp 
+  148  du -d ss.cpp 
+  149  du -b ss.cpp 
+  150  history
+  151  history 10
+  152  du -d ss.cpp 
+  153  history 10
+  154  du -d ss.cpp 
+  155  history 10
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ history -d 148
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ history 10
+  147  tac ss.cpp 
+  148  du -b ss.cpp 
+  149  history
+  150  history 10
+  151  du -d ss.cpp 
+  152  history 10
+  153  du -d ss.cpp 
+  154  history 10
+  155  history -d 148
+  156  history 10
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  file1.txt  file.txt  ganguly.txt  oss  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -l
+total 20
+-rw-rw-r-- 1 ryuzaki ryuzaki   71 Jan 13 19:17 cplusplus.cpp
+-rw-rw-r-- 1 ryuzaki ryuzaki    0 Jan 13 19:49 file1.txt
+-rw-rw-r-- 1 ryuzaki ryuzaki 4193 Jan 13 19:45 file.txt
+-rw-rw-r-- 1 ryuzaki ryuzaki    0 Jan 13 19:21 ganguly.txt
+drwxrwxr-x 2 ryuzaki ryuzaki 4096 Jan 13 19:53 oss
+-rw-rw-r-- 1 ryuzaki ryuzaki   81 Jan 13 19:39 ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ chmod o+x ss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls-l
+ls-l: command not found
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -l ss.cpp 
+-rw-rw-r-x 1 ryuzaki ryuzaki 81 Jan 13 19:39 ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ chmod o-x ss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -l ss.cpp 
+-rw-rw-r-- 1 ryuzaki ryuzaki 81 Jan 13 19:39 ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ chmod a-x ss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -l ss.cpp 
+-rw-rw-r-- 1 ryuzaki ryuzaki 81 Jan 13 19:39 ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ chmod a+x ss.cpp 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -l ss.cpp 
+-rwxrwxr-x 1 ryuzaki ryuzaki 81 Jan 13 19:39 ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ 
