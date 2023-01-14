@@ -1,0 +1,272 @@
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  snap  Templates  Videos
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~$ Desktop/
+bash: Desktop/: Is a directory
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~$ cd Desktop/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop$ cd new_folder/
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  file1.txt  file.txt  ganguly.txt  git.cpp  oss  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git add .
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git commit
+Aborting commit due to empty commit message.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .swp
+	new file:   cplusplus.cpp
+	new file:   file.txt
+	new file:   file1.txt
+	new file:   ganguly.txt
+	new file:   oss/filename.txt
+	new file:   ss.cpp
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git log
+commit 76f612733d20638f4d938eff72daf585680904a1 (HEAD -> master)
+Author: MonarchRyuzaki <shivamganguly2004@gmail.com>
+Date:   Sat Jan 14 19:39:40 2023 +0530
+
+    commit git
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ commit git
+Command 'commit' not found, did you mean:
+  command 'commix' from snap commix (v3.6-22-gf9617e0d)
+See 'snap info <snapname>' for additional versions.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   .swp
+	new file:   cplusplus.cpp
+	new file:   file.txt
+	new file:   file1.txt
+	new file:   ganguly.txt
+	new file:   oss/filename.txt
+	new file:   ss.cpp
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ vi names.txt
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git add .
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git commit -m "hsah"
+[master 27b4581] hsah
+ 8 files changed, 689 insertions(+)
+ create mode 100644 .swp
+ create mode 100644 cplusplus.cpp
+ create mode 100644 file.txt
+ create mode 100644 file1.txt
+ create mode 100644 ganguly.txt
+ create mode 100644 names.txt
+ create mode 100644 oss/filename.txt
+ create mode 100755 ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git log
+commit 27b458147c4f2c79dec8c51b30ebe8bab7f96c09 (HEAD -> master)
+Author: MonarchRyuzaki <shivamganguly2004@gmail.com>
+Date:   Sat Jan 14 19:46:29 2023 +0530
+
+    hsah
+
+commit 76f612733d20638f4d938eff72daf585680904a1
+Author: MonarchRyuzaki <shivamganguly2004@gmail.com>
+Date:   Sat Jan 14 19:39:40 2023 +0530
+
+    commit git
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git revert ^[[200~76f612733d20638f4d938eff72daf585680904a1
+fatal: bad revision '?[200~76f612733d20638f4d938eff72daf585680904a1'
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git revert 200~76f612733d20638f4d938eff72daf585680904a1
+fatal: bad revision '200~76f612733d20638f4d938eff72daf585680904a1'
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git log
+commit 27b458147c4f2c79dec8c51b30ebe8bab7f96c09 (HEAD -> master)
+Author: MonarchRyuzaki <shivamganguly2004@gmail.com>
+Date:   Sat Jan 14 19:46:29 2023 +0530
+
+    hsah
+
+commit 76f612733d20638f4d938eff72daf585680904a1
+Author: MonarchRyuzaki <shivamganguly2004@gmail.com>
+Date:   Sat Jan 14 19:39:40 2023 +0530
+
+    commit git
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ^C
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git commit -m "final commit 19/59"
+On branch master
+nothing to commit, working tree clean
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git og
+git: 'og' is not a git command. See 'git --help'.
+
+The most similar command is
+	log
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git log
+commit 27b458147c4f2c79dec8c51b30ebe8bab7f96c09 (HEAD -> master)
+Author: MonarchRyuzaki <shivamganguly2004@gmail.com>
+Date:   Sat Jan 14 19:46:29 2023 +0530
+
+    hsah
+
+commit 76f612733d20638f4d938eff72daf585680904a1
+Author: MonarchRyuzaki <shivamganguly2004@gmail.com>
+Date:   Sat Jan 14 19:39:40 2023 +0530
+
+    commit git
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote add origin git@github.com:MonarchRyuzaki/glug_tutorial.git
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote -v
+origin	git@github.com:MonarchRyuzaki/glug_tutorial.git (fetch)
+origin	git@github.com:MonarchRyuzaki/glug_tutorial.git (push)
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git push origin master
+
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? no
+Host key verification failed.
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'github.com:MonarchRyuzaki/glug_tutorial.git'
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git push origin master
+The authenticity of host 'github.com (20.207.73.82)' can't be established.
+ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+This key is not known by any other names
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
+Warning: Permanently added 'github.com' (ED25519) to the list of known hosts.
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote -v
+origin	git@github.com:MonarchRyuzaki/glug_tutorial.git (fetch)
+origin	git@github.com:MonarchRyuzaki/glug_tutorial.git (push)
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git push origin master
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git status
+On branch master
+nothing to commit, working tree clean
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  file.txt     git.cpp    oss
+file1.txt      ganguly.txt  names.txt  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git add names.txt 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git status
+On branch master
+nothing to commit, working tree clean
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ nano names.txt 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git commit -m "some changes"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git add names.txt 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   names.txt
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ nano names.txt 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git commit -m "some changes 2"
+[master 18377df] some changes 2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git branch -M main
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote add origin git@github.com:MonarchRyuzaki/glug_tutorial.git
+error: remote origin already exists.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git push -u origin main
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls
+cplusplus.cpp  file.txt     git.cpp    oss
+file1.txt      ganguly.txt  names.txt  ss.cpp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ ls -a
+.   cplusplus.cpp  file.txt     .git     names.txt  ss.cpp
+..  file1.txt      ganguly.txt  git.cpp  oss        .swp
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote add origin git@github.com:MonarchRyuzaki/glug_tutorial.git
+error: remote origin already exists.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git status
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   names.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git add .
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git commit -m "hi"
+[main 2fdb959] hi
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git push origin master
+error: src refspec master does not match any
+error: failed to push some refs to 'github.com:MonarchRyuzaki/glug_tutorial.git'
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git push origin main
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote 
+add            prune          rename         set-head       show 
+get-url        remove         set-branches   set-url        update 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote get-url origin
+git@github.com:MonarchRyuzaki/glug_tutorial.git
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote rm orgin
+error: No such remote: 'orgin'
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote 
+add            prune          rename         set-head       show 
+get-url        remove         set-branches   set-url        update 
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote prune origin
+git@github.com: Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote remove origin
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git remote add origin https://github.com/MonarchRyuzaki/glug_tutorial.git
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git add .
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git commit
+On branch main
+nothing to commit, working tree clean
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git commit -m "next 1"
+On branch main
+nothing to commit, working tree clean
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git push 
+fatal: The current branch main has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin main
+
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git push -u origin main
+Username for 'https://github.com': MonarchRyuzaki
+Password for 'https://MonarchRyuzaki@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/MonarchRyuzaki/glug_tutorial.git/'
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ git push -u origin main
+Username for 'https://github.com': MonoarchRyuzaki 
+Password for 'https://MonoarchRyuzaki@github.com': 
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (17/17), 3.56 KiB | 3.56 MiB/s, done.
+Total 17 (delta 3), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/MonarchRyuzaki/glug_tutorial.git
+ * [new branch]      main -> main
+Branch 'main' set up to track remote branch 'main' from 'origin'.
+ryuzaki@ryuzaki-IdeaPad-Gaming-3-15ACH6:~/Desktop/new_folder$ 
